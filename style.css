@@ -241,3 +241,7 @@ ul{list-style:none}
   .form-row{grid-template-columns:1fr}
   .about-stats{padding:1.25rem 1rem}
 }
+
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.projects-grid .project-card{grid-template-columns:1fr;padding:2rem}
+@media(max-width:768px){.projects-grid{grid-template-columns:1fr}}
