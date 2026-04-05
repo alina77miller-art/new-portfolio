@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alina Miller — Full-Stack Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <canvas id="starCanvas"></canvas>
+  <canvas id="threeCanvas"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Alina<span class="logo-dot"> Miller</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ &nbsp;Full-Stack Java Developer &nbsp;✦</p>
+      <h1 class="hero-name">Alina<br/><em>Miller</em></h1>
+      <p class="hero-sub">Crafting scalable systems &amp; beautiful interfaces.<br/> available worldwide.</p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Say Hello</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag">Java</span><span class="tag">Spring Boot</span>
+        <span class="tag">React</span><span class="tag">Microservices</span>
+        <span class="tag">PostgreSQL</span><span class="tag">AWS</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-3d-wrap">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-photo-wrap">
+         
+          <div class="floating-badge badge1">☕ Java</div>
+          <div class="floating-badge badge2">⚛️ React</div>
+          <div class="floating-badge badge3">🚀 Spring Boot</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Software engineer with <strong>5+ years of experience</strong> developing scalable web applications and microservices-based systems. I specialize in Java backend development with Spring Boot, RESTful APIs, and relational databases.</p>
+          <p>Equally comfortable on the frontend — building responsive UIs with React and Angular. I thrive in Agile teams and love translating complex business requirements into clean, production-ready solutions.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years Exp.</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Companies</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
+          </div>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-info">
+            <div class="info-row"><span class="info-icon">💼</span><div><span class="info-label">Status</span><span class="info-val">Open to Work</span></div></div>
+            <div class="info-row"><span class="info-icon">🎓</span><div><span class="info-label">Education</span><span class="info-val">B.Sc. Computer Science</span></div></div>
+            <div class="info-row"><span class="info-icon">✉️</span><div><span class="info-label">Email</span><span class="info-val">DreamWork77SJ@outlook.com</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 / Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div><h3 class="job-title">Freelance Full-Stack Developer</h3><p class="job-co">Self-Employed</p></div>
+              <span class="job-date">2024 – Present</span>
+            </div>
+            <ul class="job-list">
+              <li>Developed backend services using Java and Spring Boot</li>
+              <li>Built REST APIs and microservices architectures</li>
+              <li>Designed relational database schemas and optimized SQL queries</li>
+              <li>Developed responsive frontend applications using React</li>
+              <li>Implemented CI/CD workflows and cloud deployments</li>
+            </ul>
+            <div class="job-tags"><span class="tag-sm">Java</span><span class="tag-sm">Spring Boot</span><span class="tag-sm">React</span><span class="tag-sm">CI/CD</span><span class="tag-sm">AWS</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div><h3 class="job-title">Software Engineer</h3><p class="job-co">Fluz</p></div>
+              <span class="job-date">2023</span>
+            </div>
+            <ul class="job-list">
+              <li>Built backend services and APIs supporting application functionality</li>
+              <li>Developed frontend components using React and Angular</li>
+              <li>Integrated third-party services and APIs</li>
+              <li>Participated in Agile development cycles and code reviews</li>
+            </ul>
+            <div class="job-tags"><span class="tag-sm">React</span><span class="tag-sm">Angular</span><span class="tag-sm">APIs</span><span class="tag-sm">Agile</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div><h3 class="job-title">Junior Full-Stack Developer</h3><p class="job-co">Ironbelly Studios</p></div>
+              <span class="job-date">2022 – 2023</span>
+            </div>
+            <ul class="job-list">
+              <li>Built backend services using Java and REST APIs</li>
+              <li>Developed frontend UI components using JavaScript frameworks</li>
+              <li>Assisted with database design and SQL queries</li>
+              <li>Debugged and optimized application performance</li>
+            </ul>
+            <div class="job-tags"><span class="tag-sm">Java</span><span class="tag-sm">JavaScript</span><span class="tag-sm">SQL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 / Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card"><div class="sk-icon">☕</div><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>RESTful APIs</li><li>Microservices</li><li>Python</li><li>C#</li></ul></div>
+        <div class="skill-card glass-card"><div class="sk-icon">🎨</div><h3>Frontend</h3><ul><li>React</li><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul></div>
+        <div class="skill-card glass-card"><div class="sk-icon">🗄️</div><h3>Databases</h3><ul><li>PostgreSQL</li><li>MySQL</li><li>SQL Server</li><li>MongoDB</li></ul></div>
+        <div class="skill-card glass-card"><div class="sk-icon">⚙️</div><h3>DevOps</h3><ul><li>Git</li><li>Docker</li><li>CI/CD Pipelines</li><li>AWS</li></ul></div>
+        <div class="skill-card glass-card"><div class="sk-icon">📐</div><h3>Practices</h3><ul><li>OOP</li><li>API Design</li><li>Agile / Scrum</li><li>TDD</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section class="section section-alt" id="project">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 / Project</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+      <div class="project-card glass-card">
+        <div class="project-content">
+          <p class="proj-label">Featured Project</p>
+          <h3 class="proj-title">Microservices Task<br/>Management Platform</h3>
+          <p class="proj-desc">A full-stack task management system built on a microservices architecture — designed for scalability, performance, and a clean responsive interface.</p>
+          <ul class="proj-list">
+            <li>Microservices architecture with Spring Boot</li>
+            <li>REST APIs supporting complex task workflows</li>
+            <li>Responsive React interface for task management</li>
+            <li>Optimized relational database schema</li>
+          </ul>
+          <div class="proj-tech"><span class="tag-sm">Java</span><span class="tag-sm">Spring Boot</span><span class="tag-sm">React</span><span class="tag-sm">PostgreSQL</span><span class="tag-sm">Microservices</span></div>
+        </div>
+        <div class="project-visual">
+          <div class="mockup">
+            <div class="mockup-bar"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span><span class="mockup-title">TaskFlow</span></div>
+            <div class="mockup-body">
+              <div class="mockup-side"><div class="ms active"></div><div class="ms"></div><div class="ms"></div><div class="ms"></div></div>
+              <div class="mockup-main"><div class="mm-h"></div><div class="mm-row"><div class="mm-c"></div><div class="mm-c"></div></div><div class="mm-c wide"></div><div class="mm-c short"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">05 / Contact</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-sub">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info-card glass-card">
+          <h3>Get In Touch</h3>
+          <p>Open to new opportunities and collaborations. Let's build something remarkable together.</p>
+          <div class="contact-links">
+            <a href="mailto:DreamWork77SJ@outlook.com" class="contact-link"><span class="cl-icon">✉️</span><div><span class="cl-label">Email</span><span class="cl-val">DreamWork77SJ@outlook.com</span></div></a>
+            <a href="#" class="contact-link"><span class="cl-icon">💼</span><div><span class="cl-label">LinkedIn</span><span class="cl-val">Alina Miller</span></div></a>
+            <a href="#" class="contact-link"><span class="cl-icon">🐙</span><div><span class="cl-label">GitHub</span><span class="cl-val">https://github.com/alina77miller-art</span></div></a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" placeholder="Jane Smith" autocomplete="off"/></div>
+            <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" placeholder="DreamWork77SJ@outlook.com" autocomplete="off"/></div>
+          </div>
+          <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" placeholder="Project Collaboration" autocomplete="off"/></div>
+          <div class="form-group"><label for="fmessage">Message</label><textarea id="fmessage" rows="5" placeholder="Tell me about your project..."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full"><span>Send Message</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+          <div class="form-success" id="formSuccess">✦ Message sent — I'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Alina Miller</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
