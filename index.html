@@ -59,7 +59,11 @@
       <div class="hero-3d-wrap">
         <canvas id="heroCanvas"></canvas>
         <div class="hero-photo-wrap">
-         
+          <div class="photo-frame">
+            <img src="mine.png" alt="Wang Shao Yen" class="hero-photo" />
+          </div> <div class="photo-frame">
+            <img class="hero-photo" src="mine.png" alt="Wang Shao Yen" />
+          </div>
           <div class="floating-badge badge1">☕ Java</div>
           <div class="floating-badge badge2">⚛️ React</div>
           <div class="floating-badge badge3">🚀 Node.js</div>
@@ -89,7 +93,7 @@
         </div>
         <div class="about-card glass-card">
           <div class="about-info">
-            <div class="info-row"><span class="info-icon">�</span><div><span class="info-label">Location</span><span class="info-val">Shanghai, China</span></div></div>
+            <div class="info-row"><span class="info-icon">📍</span><div><span class="info-label">Location</span><span class="info-val">Shanghai, China</span></div></div>
             <div class="info-row"><span class="info-icon">💼</span><div><span class="info-label">Status</span><span class="info-val">Open to Work</span></div></div>
             <div class="info-row"><span class="info-icon">🎓</span><div><span class="info-label">Education</span><span class="info-val">B.Sc. Computer Science, SJTU</span></div></div>
             <div class="info-row"><span class="info-icon">✉️</span><div><span class="info-label">Email</span><span class="info-val">DreamWork77SJ@outlook.com</span></div></div>
@@ -171,7 +175,7 @@
       <div class="skills-grid">
         <div class="skill-card glass-card"><div class="sk-icon">☕</div><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>Node.js</li><li>Python</li><li>Go</li><li>PHP</li><li>ASP.NET Core</li></ul></div>
         <div class="skill-card glass-card"><div class="sk-icon">🎨</div><h3>Frontend</h3><ul><li>React</li><li>Angular</li><li>Next.js</li><li>Nuxt.js</li><li>TypeScript</li><li>React Native</li><li>Flutter</li></ul></div>
-        <div class="skill-card glass-card"><div class="sk-icon">🗄️</div><h3>Databases</h3><ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>GraphQL</li><li>SQL Server</li><li>Oracle</li></ul></div>
+        <div class="skill-card glass-card"><div class="sk-icon">�️</div><h3>Databases</h3><ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>GraphQL</li><li>SQL Server</li><li>Oracle</li></ul></div>
         <div class="skill-card glass-card"><div class="sk-icon">⚙️</div><h3>DevOps</h3><ul><li>Git</li><li>Docker</li><li>CI/CD Pipelines</li><li>AWS</li></ul></div>
         <div class="skill-card glass-card"><div class="sk-icon">📐</div><h3>Practices</h3><ul><li>OOP</li><li>API Design</li><li>Agile / Scrum</li><li>TDD</li></ul></div>
       </div>
@@ -185,26 +189,59 @@
         <span class="section-label">04 / Project</span>
         <h2 class="section-title">Selected Work</h2>
       </div>
-      <div class="project-card glass-card">
-        <div class="project-content">
-          <p class="proj-label">Featured Project</p>
-          <h3 class="proj-title">Microservices Task<br/>Management Platform</h3>
-          <p class="proj-desc">A full-stack task management system built on a microservices architecture — designed for scalability, performance, and a clean responsive interface.</p>
-          <ul class="proj-list">
-            <li>Microservices architecture with Spring Boot</li>
-            <li>REST APIs supporting complex task workflows</li>
-            <li>Responsive React interface for task management</li>
-            <li>Optimized relational database schema</li>
-          </ul>
-          <div class="proj-tech"><span class="tag-sm">Java</span><span class="tag-sm">Spring Boot</span><span class="tag-sm">React</span><span class="tag-sm">PostgreSQL</span><span class="tag-sm">Microservices</span></div>
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <p class="proj-label">✦ Featured Project</p>
+            <h3 class="proj-title">Microservices Task Management Platform</h3>
+            <p class="proj-desc">A full-stack task management system built on a microservices architecture — designed for scalability, performance, and a clean responsive interface.</p>
+            <ul class="proj-list">
+              <li>Designed microservices architecture using Spring Boot</li>
+              <li>Built REST APIs for task workflows and user interactions</li>
+              <li>Developed responsive frontend using React</li>
+              <li>Designed and optimized PostgreSQL database schema</li>
+            </ul>
+            <div class="proj-tech"><span class="tag-sm">Java</span><span class="tag-sm">Spring Boot</span><span class="tag-sm">React</span><span class="tag-sm">PostgreSQL</span><span class="tag-sm">Microservices</span></div>
+          </div>
         </div>
-        <div class="project-visual">
-          <div class="mockup">
-            <div class="mockup-bar"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span><span class="mockup-title">TaskFlow</span></div>
-            <div class="mockup-body">
-              <div class="mockup-side"><div class="ms active"></div><div class="ms"></div><div class="ms"></div><div class="ms"></div></div>
-              <div class="mockup-main"><div class="mm-h"></div><div class="mm-row"><div class="mm-c"></div><div class="mm-c"></div></div><div class="mm-c wide"></div><div class="mm-c short"></div></div>
-            </div>
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <p class="proj-label">Project</p>
+            <h3 class="proj-title">E-commerce Platform</h3>
+            <p class="proj-desc">A full-stack e-commerce system with user authentication, product management, and order processing built for stability under high concurrent users.</p>
+            <ul class="proj-list">
+              <li>Built full-stack project using React, Node.js, MongoDB</li>
+              <li>Implemented user login, product system, and order processing</li>
+              <li>Designed REST APIs and handled frontend state management</li>
+              <li>Focused on system stability under multiple users</li>
+            </ul>
+            <div class="proj-tech"><span class="tag-sm">React</span><span class="tag-sm">Node.js</span><span class="tag-sm">MongoDB</span><span class="tag-sm">REST API</span></div>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <p class="proj-label">Project</p>
+            <h3 class="proj-title">Real-time Chat App</h3>
+            <p class="proj-desc">A real-time messaging application with live communication, authentication, and robust multi-user handling.</p>
+            <ul class="proj-list">
+              <li>Built using Socket.io and Node.js</li>
+            <a href="#" class="contact-link"><span class="cl-icon">💼</span><div><span class="cl-label">LinkedIn</span><span class="cl-val">Wang Shao Yen</span></div></a>
+            <a href="#" class="contact-link"><span class="cl-icon">🐙</span><div><span class="cl-label">GitHub</span><span class="cl-val">@wangshaoy</span></div></a>
+            </ul>
+            <div class="proj-tech"><span class="tag-sm">Socket.io</span><span class="tag-sm">Node.js</span><span class="tag-sm">WebSocket</span></div>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <p class="proj-label">Project</p>
+            <h3 class="proj-title">Admin Dashboard</h3>
+            <p class="proj-desc">A feature-rich admin panel with reusable components, data tables, and role-based access control.</p>
+            <ul class="proj-list">
+              <li>Developed using React + TypeScript</li>
+              <li>Built reusable components and data tables</li>
+              <li>Implemented role-based access control</li>
+            </ul>
+            <div class="proj-tech"><span class="tag-sm">React</span><span class="tag-sm">TypeScript</span><span class="tag-sm">RBAC</span></div>
           </div>
         </div>
       </div>
@@ -225,8 +262,7 @@
           <p>Open to new opportunities and collaborations. Let's build something remarkable together.</p>
           <div class="contact-links">
             <a href="mailto:DreamWork77SJ@outlook.com" class="contact-link"><span class="cl-icon">✉️</span><div><span class="cl-label">Email</span><span class="cl-val">DreamWork77SJ@outlook.com</span></div></a>
-            <a href="#" class="contact-link"><span class="cl-icon">💼</span><div><span class="cl-label">LinkedIn</span><span class="cl-val">Alina Miller</span></div></a>
-            <a href="#" class="contact-link"><span class="cl-icon">🐙</span><div><span class="cl-label">GitHub</span><span class="cl-val">https://github.com/alina77miller-art</span></div></a>
+            <a href="#" class="contact-link"><span class="cl-icon">🐙</span><div><span class="cl-label">GitHub</span><span class="cl-val">@wangshaoy</span></div></a>
           </div>
         </div>
         <form class="contact-form glass-card" id="contactForm">
@@ -245,7 +281,8 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <p class="footer-name">Alina Miller</p>
+      <p class="footer-name">Wang Shao Yen</p>
+      <p class="footer-sub">Full-Stack Developer · Shanghai · 2026</p>
     </div>
   </footer>
 
